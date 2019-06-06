@@ -170,18 +170,19 @@ img {
 }
 .home header {
   width: 100%;
+  padding: 15px 15px;
   margin: 0 auto;
 }
 .home header .navi {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
   border-bottom: 2px dashed #C0C0C0;
+  padding: 15px;
 }
 .home header .navi h1 {
-  width: 300px;
   box-sizing: border-box;
   font-family: 'Indie Flower', cursive;
 }
@@ -193,24 +194,55 @@ img {
   width: 100%;
 }
 .home header .navi nav a {
-  width: 55px;
+  width: 150px;
   box-sizing: border-box;
-  padding: 15px 0px;
+  padding: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: black;
   text-decoration: none;
 }
-.home header img {
-  padding: 15px 0px;
-}
 .home header h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Indie Flower', cursive;
   padding: 15px 0px;
 }
 .home header p {
   border-bottom: 2px dashed #C0C0C0;
   font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 515px) {
+  header {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  header .navi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px dashed #C0C0C0;
+    padding: 5px;
+  }
+  header .navi h1 {
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+  }
+  header .navi nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  header .navi nav a {
+    width: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
+  }
 }
 .footer {
   width: 100%;
@@ -283,4 +315,37 @@ img {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   color: white;
+}
+@media (max-width: 515px) {
+  .content-pick {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 2px dashed #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .destination {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .btn button {
+    width: 100%;
+    padding: 10px 50px;
+    background: #57aabe;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: white;
+  }
 }
