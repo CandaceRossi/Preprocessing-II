@@ -1,1 +1,82 @@
-// Navigation Styles here
+// Navigation Styles here //
+.home {
+        header {
+        width: 100%;
+        padding: 15px 15px;
+        margin: 0 auto;
+        }
+         @media (max-width: 515px) {
+            header{
+            width: 100%;
+            }
+        }
+        .navi {
+            width: 100%;
+            .flex(space-between, center);
+            flex-wrap: wrap;
+            border-bottom: 2px dashed @navigation-border;
+            padding: 15px;
+        }
+             @media (max-width: 515px) {
+                .navi {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                }
+            }
+        
+            h1 {
+                box-sizing: border-box;
+                font-family: 'Indie Flower', cursive;
+            }
+               @media (max-width: 515px) {
+                h1 {
+                box-sizing: border-box;
+                font-family: 'Indie Flower', cursive;
+                }
+            }
+            
+            nav {
+                .flex(flex-end, center);
+                
+            
+                 @media (max-width: 515px) {
+
+                nav {
+                .flex(flex-end, center);
+                width: 100%;
+                    }
+                }
+            
+                a {
+                    box-sizing: border-box;
+                    padding: 10px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.6rem;
+                    color: black;
+                    text-decoration: none;
+                }
+                 @media (max-width: 515px) {
+
+                    a {
+                     padding: 5px;
+                    }
+                }
+                     
+        
+            h2 {
+                font-family: 'Indie Flower', cursive;
+                padding: 15px 0px;
+                }
+            p   {
+                border-bottom: 2px dashed @navigation-border;
+                font-family: 'Roboto', sans-serif;
+                }
+            }
+        
+}
+
+            
+           
+                

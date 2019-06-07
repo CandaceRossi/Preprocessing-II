@@ -6,6 +6,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media (max-width: 515px) {
+      .content-section{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+             }
+  }
+
    
     
     .text-content {
@@ -27,6 +37,16 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media (max-width: 515px) {
+      .inverse-content {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+  }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -36,6 +56,15 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media (max-width: 515px) {
+      .img-content {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+    }
+  }
   }
 
   .content-destination {
@@ -52,10 +81,65 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+  }
+    
+    @media (max-width: 515px) {  
+    
+      .content-pick {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+    }
+    
+  
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
-  }
-}// home
+
+    @media (max-width: 515px) {
+    .destination{
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px;
+      }
+    }
+   
+ 
+      .btn {
+        .flex(flex-start, center);
+      }
+      
+        @media (max-width: 515px) {
+      .btn {
+          width: 100%;
+          .flex(flex-start, center);
+        }
+      }
+    
+  
+
+        button {
+          padding: 10px 50px;
+          background: teal;
+          border-radius: 15px;
+          margin-bottom: 30px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.8rem;
+          color: white;
+        }
+
+          @media (max-width: 515px) {
+            button{
+              width: 75%;
+              padding: 10px 85px;
+              background: rgb(87, 170, 190);
+            }
+          }
+}
+      
+    
